@@ -317,7 +317,7 @@ img{max-width:100%; display:block}
   overflow:hidden;
 }
 .about-visual::after{
-  content:"JH";
+  content:"SS";
   position:absolute;
   right:14px;
   bottom:8px;
