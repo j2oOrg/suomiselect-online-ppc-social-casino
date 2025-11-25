@@ -160,6 +160,8 @@ img{max-width:100%; display:block}
 .contact-info-b7vy, .contact-form-e4um{background:var(--panel); border:1px solid var(--border); border-radius:14px; padding:1.2rem; color:var(--text); box-shadow:var(--shadow)}
 .contact-info-b7vy p{margin:0.15rem 0; color:var(--muted)}
 .contact-info-b7vy strong{color:var(--text)}
+.info-chip-v4ga{display:inline-flex; align-items:center; gap:0.3rem; padding:0.3rem 0.7rem; border-radius:999px; background:rgba(255,255,255,0.06); border:1px solid var(--border); color:var(--muted); font-weight:700; margin-right:0.4rem; margin-bottom:0.4rem; font-size:0.9rem}
+.info-chip-v4ga i{color:var(--accent)}
 .contact-form-e4um{display:flex; flex-direction:column; gap:0.9rem}
 .contact-form-e4um input, .contact-form-e4um textarea{width:100%; padding:0.82rem 0.95rem; border-radius:10px; border:1px solid var(--border); background:rgba(255,255,255,0.03); color:var(--text); font-size:1rem; transition:border .16s, box-shadow .16s}
 .contact-form-e4um input:focus, .contact-form-e4um textarea:focus{outline:none; border-color:var(--accent-2); box-shadow:0 0 0 3px rgba(77,225,255,0.18)}
@@ -346,23 +348,28 @@ img{max-width:100%; display:block}
 <section id="contact" class="contact-wrap-r7cu">
   <div class="container max-1080-q7hf">
     <h2 class="title-main-f8q2" style="text-align:center; font-size:2.2rem; margin-bottom:0.4rem;">Contact</h2>
-    <p class="text-sub-j1kv" style="text-align:center; margin:0 auto 1.2rem;">Share feedback, request campaign slots, or ask for a custom embed.</p>
+    <p class="text-sub-j1kv" style="text-align:center; margin:0 auto 1.2rem;">Plan a campaign drop, request a co-branded demo, or get help embedding.</p>
 
     <div class="contact-grid-j3xe">
       <div class="contact-info-b7vy">
-        <h4 style="margin:0 0 0.35rem;">Get in touch</h4>
+        <p class="label-kicker-p3dv" style="margin-bottom:0.5rem;"><i class="fa-solid fa-messages"></i>Get in touch</p>
+        <h4 style="margin:0 0 0.35rem;">Let’s build your next placement</h4>
+        <p>Send a quick note about what you need—campaign slotting, custom embeds, or creative QA.</p>
+        <div style="margin:0.6rem 0 0.4rem;">
+          <span class="info-chip-v4ga"><i class="fa-solid fa-clock"></i>24–48h reply</span>
+          <span class="info-chip-v4ga"><i class="fa-solid fa-shield-heart"></i>18+ only</span>
+          <span class="info-chip-v4ga"><i class="fa-solid fa-globe"></i>Remote-first</span>
+        </div>
         <p><strong>Email:</strong> <a href="mailto:hello@suomiselect.online">hello@suomiselect.online</a></p>
-        <p><strong>Business:</strong> suomiselect studio</p>
-        <p><strong>Location:</strong> Remote-first studio</p>
+        <p><strong>Best for:</strong> Campaign previews, co-branded demos, embed support</p>
         <p><strong>Hours:</strong> Monday–Friday, 9:00 AM – 5:00 PM (PST)</p>
-        <p><strong>Support:</strong> Replies within 24–48 hours.</p>
       </div>
 
       <form id="hubForm" class="contact-form-e4um" novalidate>
-        <input type="text" id="hubName" placeholder="Your name" required minlength="2" maxlength="60">
+        <input type="text" id="hubName" placeholder="Your name or team" required minlength="2" maxlength="60">
         <input type="email" id="hubEmail" placeholder="you@example.com" required>
-        <textarea id="hubMessage" rows="5" placeholder="Your message" required></textarea>
-        <button type="submit" class="btn-solid-c9xm">Send message</button>
+        <textarea id="hubMessage" rows="5" placeholder="Share campaign goals, timelines, or embed needs" required></textarea>
+        <button type="submit" class="btn-solid-c9xm">Send a quick brief</button>
         <p id="hubStatus" class="form-status-u5bn" aria-live="polite"></p>
       </form>
     </div>
